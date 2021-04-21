@@ -4,7 +4,7 @@ import { SettingsRepository } from "../repositories/SettingsRepository";
 
 
 class SettingsController {
- async create(response: Response, request: Request) {
+ async create(request: Request, response: Response) {
    const { chat, username } = request.body;
   
    const settingsRepository = getCustomRepository(SettingsRepository);
