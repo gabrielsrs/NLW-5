@@ -27,9 +27,6 @@ class Connection{
  @Column()
  socket_id: string;
 
- @Column()
- text: string;
-
  @CreateDateColumn()
  created_at: Date;
 
